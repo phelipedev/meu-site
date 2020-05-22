@@ -1,0 +1,54 @@
+/* Aula inicial :D */
+
+/*Sletor NOME DA TAG*/
+body{
+    background-image: url('https://devsamurai.com.br/wp-content/uploads/2016/06/F%C3%B3rmula-do-primeiro-emprego-3-passos-simples-para-trabalhar-como-programador-mesmo-se-voc%C3%AA-n%C3%A3o-tem-experi%C3%AAncia-nenhuma-capa.jpg');
+    background-size:auto 100vh;
+    height:100vh;
+    font-family: Arial;
+}
+
+li{
+ 
+    color:red;  
+}
+a{
+    text-decoration:none;
+    color:teal;
+}
+
+/*Seletor pelo CLASS*/
+.menu{
+   background-color:white;
+}
+/*Seletor HIERARQUICO*/
+.menu ul{
+   display: flex;
+   justify-content: space-around ;
+}
+.menu li{
+   list-style:none;
+}
+
+/*Seletor pela PSEUDO CASSE*/
+a:hover{
+   color:red;
+   text-decoration:underline;  
+}
+
+h1:hover{
+   color:grey;
+}
+
+h2:hover{
+   color:grey;
+}
+
+.site-subtitle,
+.site-title{
+   text-align: center;
+   color:teal;
+}
+.site-subtitle{
+   font-style:italic;
+}
