@@ -2,20 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phelipe Dos Reis</title>
     <link rel="stylesheet" href="estilos.css">
-</head>
+
+    <link href="http://allfont.net/allfont.css?fonts=aachen" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chelsea+Market&family=Cutive+Mono&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/7ba736a311.js" crossorigin="anonymous"></script>    
+  </head>
+
 <body>
-    <header>
+
+
+
+
+    <header id="home">
         <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+          <ul class="container">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">about</a></li>
+            <li><a href="#projetos">Projects</a></li>
+            <li><a href="#contato">ContAct</a></li>
           </ul>
         </nav>
-        <h1 class="site-title">Phelipe Dos Reis </h1>
-        <h2 class="site-subtitle">Web developer</h2>
+        <div class="titulo">
+            <h3 class="intro">a site developed </h3>
+            <h3 class="intro-by">by </h3>
+            <h1 class="site-title">PHELIPE DOS REIS </h1>
+            <h2 class="site-subtitle">Web Developer</h2>
+            <h2 class="site-subtitle">Front End</h2>
+            <h2 class="site-subtitle">BAck End</h2>
+        </div>
     </header>
+
+<section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+        <figure>
+          <img class="foto" src="./img/phelipe.jpg" alt="Phelipe Dos Reis">
+        </figure>
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ab. Alias beatae reprehenderit, rem quaerat laborum nemo repellendus facere illum porro impedit sint obcaecati sit distinctio deleniti velit veniam atque!
+       </p>
+        <p>Laborum possimus earum ut sit ex enim eos quas, aut velit temporibus. Autem dolores error culpa consectetur praesentium libero quaerat? Consequatur dicta modi repellat officia impedit dolorem minima. Assumenda, quod.
+        </p>
+        <p>Delectus cupiditate quibusdam non quas, nesciunt reprehenderit maxime saepe, et voluptatum quidem nemo possimus, perspiciatis aut ipsa sed animi accusantium tenetur aliquam voluptate ratione sint! Quisquam, placeat? Distinctio, beatae tempora.
+        </p>
+        <p> Site construído durante a <a target="blank" href="https://www.alura.com.br/imersao-css"> Imersão CSS da Alura</a>.
+        </p>
+</section>
+
+  <section class="projetos container" id="projetos">
+        <h2>Projects</h2>
+        <div class="grid">
+<div class="flip-card">
+      <div class="card">
+        <figure class="card-front">
+          <img class="img-projetos" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+            <figcaption>eCommerce</figcaption>
+        </figure>
+        <div class="card-back">
+          parte de tras
+
+        </div>
+      </div>
+</div>
+      
+       <div class="card">
+            <figure class="card-front">
+              <img class="img-projetos" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                <figcaption>Mobile</figcaption>
+            </figure>
+            <div class="card-back">
+              parte de tras
+            </div>
+      </div>
+        <figure>
+          <img class="img-projetos" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+            <figcaption>Web design</figcaption>
+        </figure>
+        <figure>
+          <img class="img-projetos" src="./gifs/gifmonkey.gif" alt="Projetos pessoais">
+            <figcaption>Projetos pessoais</figcaption>
+        </figure>
+      </div>
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contact</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/phelipedev">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/phelphelphel">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/phelipe-reis-3a11011a7/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="blank" href="https://www.instagram.com/phelphelphel/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a target="blank" href="https://codepen.io/phelphelphel">
+        <i class="fab fa-codepen"></i>
+      </a>
+      <a href="mailto:phedasilva17@gmail.com">
+        <i class="fas fa-at"></i>
+      </a>
+    </div>
+  </section>
+
 </body>
 </html>

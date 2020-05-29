@@ -1,11 +1,140 @@
-/* Aula inicial :D */
+                                                                                                                                /*FONTES*/
+@font-face {
+   font-family: 'aachenbold';
+   src: url('./fontes/aachen-bold/aachen-bold-webfont.woff2') format('woff2'),
+        url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'busoramaregular';
+   src: url('./fontes/busorama/busorama-webfont.woff2') format('woff2'),
+        url('./fontes/busorama/busorama-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
 
-/*Sletor NOME DA TAG*/
+}
+                                                                                                                           /*Reset do html*/ 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+                                                                                                                                 /*GERAL*/
 body{
-    background-image: url('https://devsamurai.com.br/wp-content/uploads/2016/06/F%C3%B3rmula-do-primeiro-emprego-3-passos-simples-para-trabalhar-como-programador-mesmo-se-voc%C3%AA-n%C3%A3o-tem-experi%C3%AAncia-nenhuma-capa.jpg');
-    background-size:auto 100vh;
+   background-color: wheat;
+   background-size:auto 100vh;
     height:100vh;
-    font-family: Arial;
+    font-family: 'Cutive Mono', monospace;
+    font-size:18px;
+    
+}
+/*Se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media (min-width: 400px){
+   body{
+      
+      font-size:9px;
+   }
+}   
+@media (min-width: 600px){
+      body{
+         
+         font-size: 13px;
+      }
+
+}
+@media (min-width: 900px){
+   body{
+      
+      font-size: 16px;
+   }
+}
+@media (min-width: 1200px){
+   body{
+      
+      font-size: 18px;
+   }
+
+}
+                                                                                                                            /*CABEÇALHO*/
+header{
+   height:100vh;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   background-image: url('./gifs/gifpulpfictionedited.gif');
+   background-repeat: no-repeat;
+   background-size: 27em;
+   background-position: right 22.5em;
+   background-color: black;
+}
+
+@media (min-width:400px){
+   header{
+   background-size: 245px;
+   background-position: 208px 475.5px;
+   }
+}
+@media(min-width:600px){
+   header{
+   background-size: 290px;
+   background-position: 369px 445.5px;
+   }
+}
+@media(min-width:680px){
+   header{
+   background-size: 290px;
+   background-position: 455px 445.5px;
+   }
+}
+@media(min-width:751px){
+   header{
+   background-size: 332px;
+   background-position: 498px 417.5px;
+   }
+}
+@media (min-width: 950px){
+header {
+    background-size: 380px;
+    background-position: 660px 386.5px;
+ }
+}
+@media (min-width: 1200px){
+   header {
+       background-size: 475px;
+       background-position: 835px 341.5px;
+    }
+}
+@media (min-width: 1470px){
+   header {
+       background-size: 420px;
+       background-position: 1090px 371.5px;
+    }
+}
+                                                                                                                   /*MENU*/      
+/*Seletor pelo CLASS   .menu, .site-title...*/
+.menu{
+   background-color:black;
+   position: fixed;
+   width: 100vw;
+   top: 0;
+   border-bottom: 1px solid #FF9E2D;
+   z-index: 1;
+}
+/*Seletor HIERARQUICO  .menu A, LI, UL...*/
+.menu a{
+   display: block;
+   padding: 8px 41px;
+
+}
+.menu li{
+   list-style:none;
+}
+.menu ul{
+   display: flex;
+   justify-content: space-around ;
+   padding-top: 3px;
+   padding-bottom: 3px;
 }
 
 li{
@@ -13,42 +142,250 @@ li{
     color:red;  
 }
 a{
+   font-family: 'busoramaregular';
     text-decoration:none;
-    color:teal;
+    color:#FF9E2D;
 }
 
-/*Seletor pelo CLASS*/
-.menu{
-   background-color:white;
+/*Seletor pela PSEUDO CASSE          a, h1, h2, :hover*/
+ .menu a:hover{ 
+   color:black;
+   background-color: #FF9E2D;
+   transition: background-color 1s, color 1s;
 }
-/*Seletor HIERARQUICO*/
-.menu ul{
-   display: flex;
-   justify-content: space-around ;
-}
-.menu li{
-   list-style:none;
-}
-
-/*Seletor pela PSEUDO CASSE*/
-a:hover{
-   color:red;
-   text-decoration:underline;  
+.menu a:active{ 
+   color:black;
+   background-color: rgb(255, 0, 0);
+   transition: background-color 1s, color 1s;
 }
 
+
+                                                                                                                    /*TÍTULO E SUB-TÍTULOS*/
+h1:active,
 h1:hover{
-   color:grey;
+   
+   text-shadow: 0px 8px 1px red,
+                -1px -2px 8px red,
+                 0px 8px 8px red;
+   
 }
 
-h2:hover{
-   color:grey;
+header h2:active,
+header h2:hover{
+   text-shadow: 0px 0px 10px red;
+}
+h3:active,
+h3:hover{
+   text-shadow: 0px 0px 10px red;
+
+}
+.intro,
+.intro-by{
+  color:#FF9E2D;
+  text-align: center;
+  font-family: 'busoramaregular';
+  font-size: 1.5em;
 }
 
+.site-title,
+.site-subtitle,
+.intro,
+.intro-by{
+   transition: text-shadow 650ms;
+}
+
+.site-title{
+   font-family:'aachenbold';
+   text-shadow:0px 8px 1px red ;
+   font-size: 5em;
+}
+.site-subtitle{
+   font-size: 3em;
+   line-height: 1.15em;
+   font-family: 'busoramaregular';
+}
 .site-subtitle,
 .site-title{
    text-align: center;
-   color:teal;
+   color:#FF9E2D;
+   line-height: 1.5em;
+  
+   /*
+   font-family: 'Major Mono Display', monospace;
+   font-family:'Aachen', arial;
+   font-size: 5em;
+   text-shadow: 6px 6px 1px red;*/
+  }   
+  .titulo{
+     transform: scale(0.2) translateY(50vh);
+     opacity: 0;
+
+     animation: linear 2s animacaoTitulo forwards;
+  }     
+  @keyframes animacaoTitulo{
+     0%{
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+     }
+     100%{
+      transform: scale(1) translateY(0vh);
+      opacity: 1;
+
+     }
+  }    
+                                                                                                                 /*projetos e contatos*/
+.contato,
+.sobre,
+.projetos   {
+   padding: 2em;
+   min-height: 100vh;
+   margin-left: auto;
+   margin-right: auto;
+   }
+@media (min-width: 1200px){
+ .container  {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   }
+
 }
-.site-subtitle{
-   font-style:italic;
+
+.sobre h2,                                                                                                               
+.contato h2,                                                                                                              
+.projetos h2{
+   text-align: center;
+   font-family: 'busoramaregular';
+   margin-bottom: 1.5em;
+   font-size: 2em;
+   padding: 1.1em;
+ }
+ .sobre .foto{
+   height: 383px;
+   width: 211px;
+   float: left;
+   margin-right: 2em;
+   border-radius: 5px;
+   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+ }
+ .sobre p{
+    color:black;
+    text-indent: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+ }
+ .sobre a{
+    color:black;
+    font-family: 'Cutive Mono', monospace;
+    -webkit-text-stroke-width: medium;
+    transition: text-shadow 500ms;
+
+ }
+ .sobre a:hover{
+    text-shadow: -3px 3px 2px black;
+ }
+
+ .projetos .grid{
+    display: grid;
+    gap: 3em;
+    
+ }
+ @media (min-width: 560px ) {
+   .projetos .grid{
+ 
+    grid-template-columns:240px 240px ;
+    justify-content: center;
+  }
 }
+
+@media (min-width: 880px ) {
+   .projetos .grid{
+    /*grid-template-columns: repeat(3, 240px);*/
+    grid-template-columns:240px 240px 240px ;
+    align-content: center;
+    justify-content:center;
+    height: calc(100vh - 8em - 48px);
+    width: 100%;
+   }
+}
+
+ .projetos figure{
+    text-align: center;
+ }
+
+.img-projetos{
+   height: 180px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;/*olhar mais propri.    site do paulo esta 'left bottom'*/
+   border-radius: 5px;
+   transition: transform 500ms;
+}
+/*
+.img-projetos:hover{
+   transform: scale(1.2), rotateX(45deg);
+}*/
+.flip-card{
+   perspective: 500px;
+}
+
+.card{
+   position: relative;
+   transform-style: preserve-3d;
+   transition: transform 1s;
+}
+.flip-card:hover .card{
+   transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+   position: absolute;
+   top: 0;
+   left:0;
+   backface-visibility: hidden;
+}
+.card-back{
+   background-color: royalblue;
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+
+
+/*
+@media (min-width: 1200px){
+   .img-projetos{
+      height: auto;
+      width: 100%;
+   }
+}*/
+.contato{
+   background-color: wheat;
+}
+.contato a{
+   color: black;
+   font-size: 5em;  
+   transition: text-shadow 650ms;
+}
+/*a com hover*/
+.contato a:hover{
+   
+   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.contato a:active{
+   text-shadow: 0px 0px 10px black;
+}
+
+.contato .icons{
+text-align: center;
+}
+
+
+
+
+
+
+
+
