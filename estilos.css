@@ -361,8 +361,10 @@ h3:hover{
       width: 100%;
    }
 }*/
+
 .contato{
    background-color: wheat;
+   min-height: 86vh;
 }
 .contato a{
    color: black;
@@ -388,4 +390,8 @@ text-align: center;
 
 
 
-
+.copyright{
+   text-align: center;
+   margin: 30px 0;
+   color: lightslategrey;
+}
