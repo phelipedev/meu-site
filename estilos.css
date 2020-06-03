@@ -28,6 +28,7 @@ body{
     font-family: 'Cutive Mono', monospace;
     font-size:18px;
     
+    
 }
 /*Se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px){
@@ -185,25 +186,21 @@ h3:hover{
   text-align: center;
   font-family: 'busoramaregular';
   font-size: 1.5em;
+   
 }
 
-.site-title,
-.site-subtitle,
-.intro,
-.intro-by{
-   transition: text-shadow 650ms;
-}
-
-.site-title{
-   font-family:'aachenbold';
-   text-shadow:0px 8px 1px red ;
+.site-title {
+   font-family: 'aachenbold';
+   text-shadow: 0px 8px 1px red;
    font-size: 5em;
 }
+
 .site-subtitle{
    font-size: 3em;
    line-height: 1.15em;
    font-family: 'busoramaregular';
 }
+
 .site-subtitle,
 .site-title{
    text-align: center;
@@ -216,23 +213,7 @@ h3:hover{
    font-size: 5em;
    text-shadow: 6px 6px 1px red;*/
   }   
-  .titulo{
-     transform: scale(0.2) translateY(50vh);
-     opacity: 0;
-
-     animation: linear 2s animacaoTitulo forwards;
-  }     
-  @keyframes animacaoTitulo{
-     0%{
-      transform: scale(0.2) translateY(50vh);
-      opacity: 0;
-     }
-     100%{
-      transform: scale(1) translateY(0vh);
-      opacity: 1;
-
-     }
-  }    
+ 
                                                                                                                  /*projetos e contatos*/
 .contato,
 .sobre,
@@ -260,13 +241,36 @@ h3:hover{
    font-size: 2em;
    padding: 1.1em;
  }
+ 
+ 
+ @keyframes anima4{
+   0%{
+      border-radius: 0;
+    }
+    50%{
+      border-radius: 50% 0 50% 0;
+      /*transform: rotate(.5turn);*/
+    }
+    100%{
+         border-radius:50%;
+         /* transform: rotate(1turn);*/
+          
+    }
+ }
  .sobre .foto{
    height: 383px;
    width: 211px;
    float: left;
    margin-right: 2em;
    border-radius: 5px;
-   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+   box-shadow: 0px 0px 40px 10px;
+   /*clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);*/
+ }
+ .sobre .foto:hover{
+   animation: anima4 3s ease-in  alternate;
+   border-radius: 50%;
+   box-shadow: 0px 0px 40px 10px;
+   
  }
  .sobre p{
     color:black;
@@ -284,16 +288,19 @@ h3:hover{
  .sobre a:hover{
     text-shadow: -3px 3px 2px black;
  }
-
+/*//////////////////////////////////////////////////////////////////////////*/
  .projetos .grid{
     display: grid;
     gap: 3em;
-    
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 250px;
  }
  @media (min-width: 560px ) {
    .projetos .grid{
  
     grid-template-columns:240px 240px ;
+    align-content: center;
     justify-content: center;
   }
 }
@@ -301,14 +308,21 @@ h3:hover{
 @media (min-width: 880px ) {
    .projetos .grid{
     /*grid-template-columns: repeat(3, 240px);*/
-    grid-template-columns:240px 240px 240px ;
+    grid-template-columns: repeat(3, 250px);
     align-content: center;
     justify-content:center;
-    height: calc(100vh - 8em - 48px);
-    width: 100%;
+   
    }
 }
 
+@media (min-width: 1200px) {
+   .portfolio .grid {
+     gap: 3em;
+     grid-template-columns: repeat(3, 250px);
+     align-content: center;
+     justify-content: center;
+   }
+ }
  .projetos figure{
     text-align: center;
  }
@@ -320,6 +334,7 @@ h3:hover{
    object-position: center;/*olhar mais propri.    site do paulo esta 'left bottom'*/
    border-radius: 5px;
    transition: transform 500ms;
+   text-align: center;
 }
 /*
 .img-projetos:hover{
@@ -332,10 +347,12 @@ h3:hover{
 .card{
    position: relative;
    transform-style: preserve-3d;
-   transition: transform 1s;
+   transition: transform 2s;
 }
+.flip-card:active .card,
 .flip-card:hover .card{
    transform: rotateY(180deg);
+   
 }
 
 .card-front,
@@ -346,13 +363,22 @@ h3:hover{
    backface-visibility: hidden;
 }
 .card-back{
-   background-color: royalblue;
+   color: #FF9E2D;
+   background-color: black;
     height: 180px;
     width: 100%;
+    border-radius: 5px;
     transform: rotateY(180deg);
+    box-shadow: 0px 0px 3px 5px #FF9E2D;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
+/*///////////////////////////////////////////////////////////*/
 
 /*
 @media (min-width: 1200px){
@@ -371,6 +397,7 @@ h3:hover{
    font-size: 5em;  
    transition: text-shadow 650ms;
 }
+
 /*a com hover*/
 .contato a:hover{
    
