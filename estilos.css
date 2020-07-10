@@ -1,410 +1,441 @@
-                                                                                                                                /*FONTES*/
+                                                                                                                              /*FONTES*/
 @font-face {
-   font-family: 'aachenbold';
-   src: url('./fontes/aachen-bold/aachen-bold-webfont.woff2') format('woff2'),
-        url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
+font-family: 'aachenbold';
+src: url('./fontes/aachen-bold/aachen-bold-webfont.woff2') format('woff2'),
+      url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 @font-face {
-   font-family: 'busoramaregular';
-   src: url('./fontes/busorama/busorama-webfont.woff2') format('woff2'),
-        url('./fontes/busorama/busorama-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
+font-family: 'busoramaregular';
+src: url('./fontes/busorama/busorama-webfont.woff2') format('woff2'),
+      url('./fontes/busorama/busorama-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 
 }
-                                                                                                                           /*Reset do html*/ 
+                                                                                                                        /*Reset do html*/ 
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 } 
-                                                                                                                                 /*GERAL*/
+                                                                                                                              /*GERAL*/
 body{
-   background-color: wheat;
-   background-size:auto 100vh;
-    height:100vh;
-    font-family: 'Cutive Mono', monospace;
-    font-size:18px;
-    
-    
+background-color: wheat;
+background-size:auto 100vh;
+   height:100vh;
+   font-family: 'Cutive Mono', monospace;
+   font-size:18px;
+   
+  
+
+  } 
 }
 /*Se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px){
-   body{
-      
-      font-size:9px;
-   }
+body{
+   
+   font-size:9px;
+}
 }   
 @media (min-width: 600px){
-      body{
-         
-         font-size: 13px;
-      }
+   body{
+      
+      font-size: 13px;
+   }
 
 }
 @media (min-width: 900px){
-   body{
-      
-      font-size: 16px;
-   }
+body{
+   
+   font-size: 16px;
+}
 }
 @media (min-width: 1200px){
-   body{
-      
-      font-size: 18px;
-   }
+body{
+   
+   font-size: 18px;
+}
 
 }
-                                                                                                                            /*CABEÇALHO*/
+                                                                                                                           /*CABEÇALHO*/
 header{
-   height:100vh;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   background-image: url('./gifs/gifpulpfictionedited.gif');
-   background-repeat: no-repeat;
-   background-size: 27em;
-   background-position: right 22.5em;
-   background-color: black;
+height:100vh;
+display: flex;
+justify-content:center;
+align-items: center;
+background-image: url('./gifs/gifpulpfictionedited.gif');
+background-repeat: no-repeat;
+background-size: 27em;
+background-position: right 22.5em;
+background-color: black;
+
 }
+
+
 
 @media (min-width:400px){
-   header{
-   background-size: 245px;
-   background-position: 208px 475.5px;
-   }
+header{
+background-size: 245px;
+background-position: 208px 475.5px;
+}
 }
 @media(min-width:600px){
-   header{
-   background-size: 290px;
-   background-position: 369px 445.5px;
-   }
+header{
+background-size: 290px;
+background-position: 369px 445.5px;
+}
 }
 @media(min-width:680px){
-   header{
-   background-size: 290px;
-   background-position: 455px 445.5px;
-   }
+header{
+background-size: 290px;
+background-position: 465px 465.5px;
+}
 }
 @media(min-width:751px){
-   header{
-   background-size: 332px;
-   background-position: 498px 417.5px;
-   }
+header{
+background-size: 332px;
+background-position: 498px 417.5px;
+}
 }
 @media (min-width: 950px){
 header {
-    background-size: 380px;
-    background-position: 660px 386.5px;
- }
+   background-size: 380px;
+   background-position: 660px 425.5px;
+}
 }
 @media (min-width: 1200px){
-   header {
-       background-size: 475px;
-       background-position: 835px 341.5px;
-    }
+header {
+      background-size: 475px;
+      background-position: 835px 425.5px;
+   }
 }
 @media (min-width: 1470px){
-   header {
-       background-size: 420px;
-       background-position: 1090px 371.5px;
-    }
+header {
+      background-size: 420px;
+      background-position: 1090px 465px;
+   }
 }
-                                                                                                                   /*MENU*/      
+                                                                                                                  /*MENU*/      
 /*Seletor pelo CLASS   .menu, .site-title...*/
 .menu{
-   background-color:black;
-   position: fixed;
-   width: 100vw;
-   top: 0;
-   border-bottom: 1px solid #FF9E2D;
-   z-index: 1;
+background-color:black;
+position: fixed;
+width: 100vw;
+top: 0;
+border-bottom: 1px solid #FF9E2D;
+z-index: 1;
 }
 /*Seletor HIERARQUICO  .menu A, LI, UL...*/
 .menu a{
-   display: block;
-   padding: 8px 41px;
+display: block;
+padding: 8px 41px;
 
 }
 .menu li{
-   list-style:none;
+list-style:none;
 }
 .menu ul{
-   display: flex;
-   justify-content: space-around ;
-   padding-top: 3px;
-   padding-bottom: 3px;
+display: flex;
+justify-content: space-around ;
+padding-top: 3px;
+padding-bottom: 3px;
 }
 
 li{
- 
-    color:red;  
+
+   color:red;  
 }
 a{
-   font-family: 'busoramaregular';
-    text-decoration:none;
-    color:#FF9E2D;
+font-family: 'busoramaregular';
+   text-decoration:none;
+   color:#FF9E2D;
 }
 
 /*Seletor pela PSEUDO CASSE          a, h1, h2, :hover*/
- .menu a:hover{ 
-   color:black;
-   background-color: #FF9E2D;
-   transition: background-color 1s, color 1s;
+.menu a:hover{ 
+color:black;
+background-color: #FF9E2D;
+transition: background-color 1s, color 1s;
 }
 .menu a:active{ 
-   color:black;
-   background-color: rgb(255, 0, 0);
-   transition: background-color 1s, color 1s;
+color:black;
+background-color: rgb(255, 0, 0);
+transition: background-color 1s, color 1s;
 }
 
 
-                                                                                                                    /*TÍTULO E SUB-TÍTULOS*/
+                                                                                                                  /*TÍTULO E SUB-TÍTULOS*/
 h1:active,
 h1:hover{
-   
-   text-shadow: 0px 8px 1px red,
-                -1px -2px 8px red,
-                 0px 8px 8px red;
-   
+
+text-shadow: 0px 8px 1px red,
+               -1px -2px 8px red,
+               0px 8px 8px red;
+
 }
 
 header h2:active,
 header h2:hover{
-   text-shadow: 0px 0px 10px red;
+text-shadow: 0px 0px 10px red;
 }
 h3:active,
 h3:hover{
-   text-shadow: 0px 0px 10px red;
+text-shadow: 0px 0px 10px red;
 
 }
 .intro,
 .intro-by{
-  color:#FF9E2D;
-  text-align: center;
-  font-family: 'busoramaregular';
-  font-size: 1.5em;
-   
+color:#FF9E2D;
+text-align: center;
+font-family: 'busoramaregular';
+font-size: 1.5em;
+
 }
 
 .site-title {
-   font-family: 'aachenbold';
-   text-shadow: 0px 8px 1px red;
-   font-size: 5em;
+font-family: 'aachenbold';
+text-shadow: 0px 8px 1px red;
+font-size: 5em;
 }
 
 .site-subtitle{
-   font-size: 3em;
-   line-height: 1.15em;
-   font-family: 'busoramaregular';
+font-size: 3em;
+line-height: 1.15em;
+font-family: 'busoramaregular';
 }
 
 .site-subtitle,
 .site-title{
-   text-align: center;
-   color:#FF9E2D;
-   line-height: 1.5em;
-  
-   /*
-   font-family: 'Major Mono Display', monospace;
-   font-family:'Aachen', arial;
-   font-size: 5em;
-   text-shadow: 6px 6px 1px red;*/
-  }   
- 
-                                                                                                                 /*projetos e contatos*/
+text-align: center;
+color:#FF9E2D;
+line-height: 1.5em;
+
+/*
+font-family: 'Major Mono Display', monospace;
+font-family:'Aachen', arial;
+font-size: 5em;
+text-shadow: 6px 6px 1px red;*/
+}   
+
+                                                                                                               /*projetos e contatos*/
 .contato,
+.certificados,
 .sobre,
-.projetos   {
-   padding: 2em;
-   min-height: 100vh;
-   margin-left: auto;
-   margin-right: auto;
-   }
+.projetos  {
+padding: 2em;
+min-height: 100vh;
+margin-left: auto;
+margin-right: auto;
+}
 @media (min-width: 1200px){
- .container  {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   }
+.container  {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
 
 }
 
-.sobre h2,                                                                                                               
+.sobre h2,
+.certificados h2,                                                                                                               
 .contato h2,                                                                                                              
 .projetos h2{
-   text-align: center;
-   font-family: 'busoramaregular';
-   margin-bottom: 1.5em;
-   font-size: 2em;
-   padding: 1.1em;
- }
- 
- 
- @keyframes anima4{
-   0%{
-      border-radius: 0;
-    }
-    50%{
-      border-radius: 50% 0 50% 0;
-      /*transform: rotate(.5turn);*/
-    }
-    100%{
-         border-radius:50%;
-         /* transform: rotate(1turn);*/
-          
-    }
- }
- .sobre .foto{
-   height: 383px;
-   width: 211px;
-   float: left;
-   margin-right: 2em;
-   border-radius: 5px;
-   box-shadow: 0px 0px 40px 10px;
-   /*clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);*/
- }
- .sobre .foto:hover{
-   animation: anima4 3s ease-in  alternate;
-   border-radius: 50%;
-   box-shadow: 0px 0px 40px 10px;
-   
- }
- .sobre p{
-    color:black;
-    text-indent: 2em;
-    margin-bottom: 2em;
-    text-align: justify;
- }
- .sobre a{
-    color:black;
-    font-family: 'Cutive Mono', monospace;
-    -webkit-text-stroke-width: medium;
-    transition: text-shadow 500ms;
+text-align: center;
+font-family: 'busoramaregular';
+margin-bottom: 1.5em;
+font-size: 2em;
+padding: 1.1em;
+}
 
- }
- .sobre a:hover{
-    text-shadow: -3px 3px 2px black;
- }
+
+@keyframes anima4{
+0%{
+   border-radius: 0;
+   }
+   50%{
+   border-radius: 50% 0 50% 0;
+   /*transform: rotate(.5turn);*/
+   }
+   100%{
+      border-radius:50%;
+      /* transform: rotate(1turn);*/
+         
+   }
+}
+.sobre .foto{
+height: 383px;
+width: 211px;
+float: left;
+margin-right: 2em;
+border-radius: 5px;
+box-shadow: 0px 0px 40px 10px;
+/*clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);*/
+}
+.sobre .foto:hover{
+animation: anima4 3s ease-in  alternate;
+border-radius: 50%;
+box-shadow: 0px 0px 40px 10px;
+
+}
+.sobre p{
+   color:black;
+   text-indent: 2em;
+   margin-bottom: 2em;
+   text-align: justify;
+}
+.sobre a{
+   color:black;
+   font-family: 'Cutive Mono', monospace;
+   -webkit-text-stroke-width: medium;
+   transition: text-shadow 500ms;
+
+}
+.sobre a:hover{
+   text-shadow: -3px 3px 2px black;
+}
 /*//////////////////////////////////////////////////////////////////////////*/
- .projetos .grid{
-    display: grid;
-    gap: 3em;
-    align-content: center;
-    justify-content: center;
-    grid-template-columns: 250px;
- }
- @media (min-width: 560px ) {
-   .projetos .grid{
- 
-    grid-template-columns:240px 240px ;
-    align-content: center;
-    justify-content: center;
-  }
+.projetos .grid,
+.certificados .grid{
+   display: grid;
+   gap: 3em;
+   align-content: center;
+   justify-content: center;
+   grid-template-columns: 250px;
+}
+
+@media (min-width: 560px ) {
+.projetos .grid,
+.certificados .grid{
+
+   grid-template-columns:240px 240px ;
+   align-content: center;
+   justify-content: center;
+}
 }
 
 @media (min-width: 880px ) {
-   .projetos .grid{
-    /*grid-template-columns: repeat(3, 240px);*/
-    grid-template-columns: repeat(3, 250px);
-    align-content: center;
-    justify-content:center;
-   
-   }
+.projetos .grid,
+.certificados .grid{
+   /*grid-template-columns: repeat(3, 240px);*/
+   grid-template-columns: repeat(3, 250px);
+   align-content: center;
+   justify-content:center;
+
+}
 }
 
 @media (min-width: 1200px) {
-   .portfolio .grid {
-     gap: 3em;
-     grid-template-columns: repeat(3, 250px);
-     align-content: center;
-     justify-content: center;
-   }
- }
- .projetos figure{
-    text-align: center;
- }
+.projetos .grid,
+.certificados .grid {
+   gap: 3em;
+   grid-template-columns: repeat(3, 250px);
+   align-content: center;
+   justify-content: center;
+}
+}
+.projetos figure,
+.certificados figure{
+text-align: center;
+}
 
-.img-projetos{
-   height: 180px;
-   width: 100%;
-   object-fit: cover;
-   object-position: center;/*olhar mais propri.    site do paulo esta 'left bottom'*/
-   border-radius: 5px;
-   transition: transform 500ms;
-   text-align: center;
+.img-projetos,
+.img-certificados,
+.video-certificados{
+border-radius: 5px;
+width: 250px;/*estava em 100%*/
+height: 200px;
+object-fit: cover;
+object-position: center;/*olhar mais propri.    site do paulo esta 'left bottom'*/
+transition: transform 500ms;
+text-align: center;
 }
 /*
 .img-projetos:hover{
-   transform: scale(1.2), rotateX(45deg);
+transform: scale(1.2), rotateX(45deg);
 }*/
 .flip-card{
-   perspective: 500px;
+
+perspective: 500px;
 }
 
 .card{
-   position: relative;
-   transform-style: preserve-3d;
-   transition: transform 2s;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 2s;
 }
 .flip-card:active .card,
 .flip-card:hover .card{
-   transform: rotateY(180deg);
-   
+transform: rotateY(180deg);
+
 }
 
 .card-front,
 .card-back{
-   position: absolute;
-   top: 0;
-   left:0;
-   backface-visibility: hidden;
-}
-.card-back{
-   color: #FF9E2D;
-   background-color: black;
-    height: 180px;
-    width: 100%;
-    border-radius: 5px;
-    transform: rotateY(180deg);
-    box-shadow: 0px 0px 3px 5px #FF9E2D;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+backface-visibility: hidden;
+top: 0;
+left:0;
 
 }
+.card-back{
+box-shadow: 0px 0px 3px 5px #FF9E2D;
+position: absolute;
+border-radius: 5px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: black;
+width: 250px;/*estave em 100%*/
+height: 200px;
+top:0;
+left:0;
+transform: rotateY(180deg);
+color: #FF9E2D;
+}
+
+.card-back li{
+   color: #FF9E2D;
+}
+.link-certificados{
+   font-family: 'Cutive Mono', monospace;
+
+
+
+}
+
 
 
 /*///////////////////////////////////////////////////////////*/
 
 /*
 @media (min-width: 1200px){
-   .img-projetos{
-      height: auto;
-      width: 100%;
-   }
+.img-projetos{
+   height: auto;
+   width: 100%;
+}
 }*/
 
 .contato{
-   background-color: wheat;
-   min-height: 86vh;
+background-color: wheat;
+min-height: 86vh;
 }
 .contato a{
-   color: black;
-   font-size: 5em;  
-   transition: text-shadow 650ms;
+color: black;
+font-size: 5em;  
+transition: text-shadow 650ms;
 }
 
 /*a com hover*/
 .contato a:hover{
-   
-   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 .contato a:active{
-   text-shadow: 0px 0px 10px black;
+text-shadow: 0px 0px 10px black;
 }
 
 .contato .icons{
@@ -418,7 +449,7 @@ text-align: center;
 
 
 .copyright{
-   text-align: center;
-   margin: 30px 0;
-   color: lightslategrey;
+text-align: center;
+margin: 30px 0;
+color: lightslategrey;
 }
