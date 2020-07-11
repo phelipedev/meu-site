@@ -1,65 +1,65 @@
-                                                                                                                              /*FONTES*/
+                                                                                                      /*FONTES*/
 @font-face {
 font-family: 'aachenbold';
 src: url('./fontes/aachen-bold/aachen-bold-webfont.woff2') format('woff2'),
-      url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
+url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'busoramaregular';
 src: url('./fontes/busorama/busorama-webfont.woff2') format('woff2'),
-      url('./fontes/busorama/busorama-webfont.woff') format('woff');
+url('./fontes/busorama/busorama-webfont.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 
 }
-                                                                                                                        /*Reset do html*/ 
+                                                                                                /*Reset do html*/ 
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 } 
-                                                                                                                              /*GERAL*/
+                                                                                                      /*GERAL*/
 body{
 background-color: wheat;
 background-size:auto 100vh;
-   height:100vh;
-   font-family: 'Cutive Mono', monospace;
-   font-size:18px;
-   
-  
+height:100vh;
+font-family: 'Cutive Mono', monospace;
+font-size:18px;
 
-  } 
+
+
+} 
 }
 /*Se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px){
 body{
-   
-   font-size:9px;
+
+font-size:9px;
 }
 }   
 @media (min-width: 600px){
-   body{
-      
-      font-size: 13px;
-   }
+body{
+
+font-size: 13px;
+}
 
 }
 @media (min-width: 900px){
 body{
-   
-   font-size: 16px;
+
+font-size: 16px;
 }
 }
 @media (min-width: 1200px){
 body{
-   
-   font-size: 18px;
+
+font-size: 18px;
 }
 
 }
-                                                                                                                           /*CABEÇALHO*/
+                                                                                                   /*CABEÇALHO*/
 header{
 height:100vh;
 display: flex;
@@ -101,23 +101,23 @@ background-position: 498px 417.5px;
 }
 @media (min-width: 950px){
 header {
-   background-size: 380px;
-   background-position: 660px 425.5px;
+background-size: 380px;
+background-position: 660px 425.5px;
 }
 }
 @media (min-width: 1200px){
 header {
-      background-size: 475px;
-      background-position: 835px 425.5px;
-   }
+background-size: 475px;
+background-position: 835px 425.5px;
+}
 }
 @media (min-width: 1470px){
 header {
-      background-size: 420px;
-      background-position: 1090px 465px;
-   }
+background-size: 420px;
+background-position: 1090px 465px;
 }
-                                                                                                                  /*MENU*/      
+}
+                                                                                          /*MENU*/      
 /*Seletor pelo CLASS   .menu, .site-title...*/
 .menu{
 background-color:black;
@@ -145,12 +145,12 @@ padding-bottom: 3px;
 
 li{
 
-   color:red;  
+color:red;  
 }
 a{
 font-family: 'busoramaregular';
-   text-decoration:none;
-   color:#FF9E2D;
+text-decoration:none;
+color:#FF9E2D;
 }
 
 /*Seletor pela PSEUDO CASSE          a, h1, h2, :hover*/
@@ -166,13 +166,13 @@ transition: background-color 1s, color 1s;
 }
 
 
-                                                                                                                  /*TÍTULO E SUB-TÍTULOS*/
+                                                                                          /*TÍTULO E SUB-TÍTULOS*/
 h1:active,
 h1:hover{
 
 text-shadow: 0px 8px 1px red,
-               -1px -2px 8px red,
-               0px 8px 8px red;
+-1px -2px 8px red,
+0px 8px 8px red;
 
 }
 
@@ -219,7 +219,7 @@ font-size: 5em;
 text-shadow: 6px 6px 1px red;*/
 }   
 
-                                                                                                               /*projetos e contatos*/
+                                                                                       /*projetos e contatos*/
 .contato,
 .certificados,
 .sobre,
@@ -252,17 +252,17 @@ padding: 1.1em;
 
 @keyframes anima4{
 0%{
-   border-radius: 0;
-   }
-   50%{
-   border-radius: 50% 0 50% 0;
-   /*transform: rotate(.5turn);*/
-   }
-   100%{
-      border-radius:50%;
-      /* transform: rotate(1turn);*/
-         
-   }
+border-radius: 0;
+}
+50%{
+border-radius: 50% 0 50% 0;
+/*transform: rotate(.5turn);*/
+}
+100%{
+border-radius:50%;
+/* transform: rotate(1turn);*/
+
+}
 }
 .sobre .foto{
 height: 383px;
@@ -280,48 +280,48 @@ box-shadow: 0px 0px 40px 10px;
 
 }
 .sobre p{
-   color:black;
-   text-indent: 2em;
-   margin-bottom: 2em;
-   text-align: justify;
+color:black;
+text-indent: 2em;
+margin-bottom: 2em;
+text-align: justify;
 }
 .sobre a{
-   color:black;
-   font-family: 'Cutive Mono', monospace;
-   -webkit-text-stroke-width: medium;
-   transition: text-shadow 500ms;
+color:black;
+font-family: 'Cutive Mono', monospace;
+-webkit-text-stroke-width: medium;
+transition: text-shadow 500ms;
 
 }
 .sobre a:hover{
-   text-shadow: -3px 3px 2px black;
+text-shadow: -3px 3px 2px black;
 }
 /*//////////////////////////////////////////////////////////////////////////*/
 .projetos .grid,
 .certificados .grid{
-   display: grid;
-   gap: 3em;
-   align-content: center;
-   justify-content: center;
-   grid-template-columns: 250px;
+display: grid;
+gap: 3em;
+align-content: center;
+justify-content: center;
+grid-template-columns: 250px;
 }
 
 @media (min-width: 560px ) {
 .projetos .grid,
 .certificados .grid{
 
-   grid-template-columns:240px 240px ;
-   align-content: center;
-   justify-content: center;
+grid-template-columns:240px 240px ;
+align-content: center;
+justify-content: center;
 }
 }
 
 @media (min-width: 880px ) {
 .projetos .grid,
 .certificados .grid{
-   /*grid-template-columns: repeat(3, 240px);*/
-   grid-template-columns: repeat(3, 250px);
-   align-content: center;
-   justify-content:center;
+/*grid-template-columns: repeat(3, 240px);*/
+grid-template-columns: repeat(3, 250px);
+align-content: center;
+justify-content:center;
 
 }
 }
@@ -329,10 +329,10 @@ box-shadow: 0px 0px 40px 10px;
 @media (min-width: 1200px) {
 .projetos .grid,
 .certificados .grid {
-   gap: 3em;
-   grid-template-columns: repeat(3, 250px);
-   align-content: center;
-   justify-content: center;
+gap: 3em;
+grid-template-columns: repeat(3, 250px);
+align-content: center;
+justify-content: center;
 }
 }
 .projetos figure,
@@ -398,10 +398,10 @@ color: #FF9E2D;
 }
 
 .card-back li{
-   color: #FF9E2D;
+color: #FF9E2D;
 }
 .link-certificados{
-   font-family: 'Cutive Mono', monospace;
+font-family: 'Cutive Mono', monospace;
 
 
 
@@ -414,8 +414,8 @@ color: #FF9E2D;
 /*
 @media (min-width: 1200px){
 .img-projetos{
-   height: auto;
-   width: 100%;
+height: auto;
+width: 100%;
 }
 }*/
 
