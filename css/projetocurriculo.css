@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'aachenbold';
+  src: url('./fontes/aachen-bold/aachen-bold-webfont.woff2') format('woff2'),
+  url('./fontes/aachen-bold/aachen-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face {
+  font-family: 'busoramaregular';
+  src: url('./fontes/busorama/busorama-webfont.woff2') format('woff2'),
+  url('./fontes/busorama/busorama-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+  }
+
+*{
+  box-sizing: border-box;
+}
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-color: black;
+}
+
+h1{
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+
+img {
+  width:165px;
+  height:312px;
+  border:2px solid #fff;
+}
+.banner-img{
+  background-image: url(../img/img-phelipe-bw-11.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  filter: blur(5px);
+  
+}
+
+.banner-text{
+  position: absolute;
+  top: 800px;
+  left: 50%;
+  transform: translate(-100%, -75%);
+  z-index: 5;
+  width: 45%;
+  padding: 40px 15px;
+  text-align: center;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background-color: rgba(0,0,20.3);
+  color: #fff;
+  font-weight: bold;
+  border: 10px inset #fff;
+}
+
+.banner-text p{
+  padding: 0 8%;
+  font-family: merienda;
+}
+.banner-text li{
+  text-align: initial;
+}
+
+.another{
+  display: inline-block;
+  padding: 10px 50px;
+  border: 2px solid #fff;
+  font-size: 15px;
+  text-decoration: none;
+  color:#fff;
+  margin-top: 15px;
+}
+a{ 
+  
+  text-decoration: none;
+  color: #fff;
+
+}
+li{
+  padding: 4px;
+}
